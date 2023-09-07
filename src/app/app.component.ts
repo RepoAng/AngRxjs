@@ -18,7 +18,7 @@ export class AppComponent implements OnInit  {
      } );
 
      of ('Apple1', 'Apple2','Apple3').subscribe({
-      next:(item) => console.log(item)
+      next:(item) => console.log(item),
       error: (ex) => console.log(ex),
       complete:() => console.log('done')
      });
